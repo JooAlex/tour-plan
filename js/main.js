@@ -14,6 +14,7 @@ var hotelSlider = new Swiper('.hotel-slider', {
     onlyInViewport: false,
   },
 });
+
 // Функция ymaps.ready() будет вызвана, когда
 // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
 ymaps.ready(init);
@@ -30,6 +31,7 @@ function init(){
     zoom: 7
   });
 }
+
 var reviewsSlider = new Swiper('.reviews-slider', {
   // Optional parameters
   loop: true,
@@ -45,3 +47,5 @@ var reviewsSlider = new Swiper('.reviews-slider', {
     onlyInViewport: false,
   },
 });
+
+$('.newsletter').parallax({imageSrc: '/img/newsletter-bg.jpg'});
