@@ -11,14 +11,12 @@
         object-fit: cover
   .packages
     &-wrapper
-      column-gap: 20px
-      row-gap: 20px
-    &-card
-      width: 300px
-      height: 450px
-      &__first
-        width: 630px
-        height: 455px
+      grid-template-columns: repeat(3, 300px)
+    &__image
+      object-fit: cover
+    &__new-price
+      font-size: 20px
+      line-height: 26px
   .card
     width: 230px
     height: 230px
@@ -55,6 +53,10 @@
     width: 340px
   .map
     width: 340px
+  .packages
+    &-wrapper
+      grid-template-rows: repeat(3, 500px)
+      grid-template-columns: repeat(2, 335px)
   .reviews
     &-slider
       &__item
@@ -118,6 +120,19 @@
     width: 100%
   .map
     width: 100%
+  .packages
+    &-wrapper
+      grid-template-columns: repeat(2, 275px)
+      column-gap: 26px
+      row-gap: 26px
+      &__image
+      object-fit: cover
+    &__info
+      &-text
+        font-size: 12px
+    &__new-price
+      font-size: 20px
+      line-height: 26px
   .newsletter
     &-wrapper
       max-width: 576px
@@ -157,6 +172,28 @@
       margin-bottom: 20px
     &-slider
       height: 250px
+  .packages
+    &-wrapper
+      grid-template-columns: 275px
+      grid-template-rows:  600px
+    &__card
+      &-first
+        grid-template-columns: 100%
+        grid-template-rows: 25% 75%
+      &-second
+        display: none
+      &-third
+        display: none
+      &-fourth
+        display: none
+      &-fifth
+        display: none
+    &__image
+      &-first
+        border-radius: 8px 8px 0px 0px
+    &__info
+      &-first
+        border-radius: 0px 0px 8px 8px
   .newsletter
     padding: 76px 0 83px 0
     &-title
