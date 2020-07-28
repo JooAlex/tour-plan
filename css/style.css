@@ -814,6 +814,8 @@ template {
   line-height: 45px;
   text-align: center;
   text-transform: uppercase;
+  padding: 0;
+  margin: 0 0 40px 0;
 }
 
 .packages-wrapper {
@@ -1699,11 +1701,13 @@ template {
     width: 100%;
   }
   .packages-wrapper {
-    -ms-grid-columns: (275px)[2];
-        grid-template-columns: repeat(2, 275px);
-    -webkit-column-gap: 26px;
-            column-gap: 26px;
-    row-gap: 26px;
+    -ms-grid-columns: (auto)[2];
+        grid-template-columns: repeat(2, auto);
+    -ms-grid-rows: (500px)[3];
+        grid-template-rows: repeat(3, 500px);
+    row-gap: 20px;
+    -webkit-column-gap: 20px;
+            column-gap: 20px;
     -o-object-fit: cover;
        object-fit: cover;
   }
@@ -1770,35 +1774,41 @@ template {
   .hotel-slider {
     height: 250px;
   }
-  .packages-wrapper {
-    -ms-grid-columns: 275px;
-        grid-template-columns: 275px;
-    -ms-grid-rows: 600px;
-        grid-template-rows: 600px;
+  .packages__title {
+    font-size: 30px;
+    line-height: 40px;
+    margin: 0 0 20px 0;
   }
-  .packages__card-first {
+  .packages-wrapper {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: repeat 5, 500px;
+        grid-template-rows: repeat 5, 500px;
+  }
+  .packages__card {
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
-    -ms-grid-rows: 25% 75%;
-        grid-template-rows: 25% 75%;
+    -ms-grid-rows: 50% 50%;
+        grid-template-rows: 50% 50%;
   }
-  .packages__card-second {
-    display: none;
-  }
-  .packages__card-third {
-    display: none;
-  }
-  .packages__card-fourth {
-    display: none;
-  }
-  .packages__card-fifth {
-    display: none;
+  .packages__card-first {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / 2;
   }
   .packages__image-first {
     border-radius: 8px 8px 0px 0px;
   }
   .packages__info-first {
     border-radius: 0px 0px 8px 8px;
+  }
+  .packages__info-title {
+    font-size: 16px;
+    line-height: 20px;
+    margin: 10px 0 0 0;
+  }
+  .packages__info-text {
+    display: none;
   }
   .newsletter {
     padding: 76px 0 83px 0;
