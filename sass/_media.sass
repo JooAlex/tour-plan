@@ -286,18 +286,24 @@
   .subscribe
     width: 100%
   .reviews
+    padding-bottom: 50px
     &__title
       font-size: 18px
       line-height: 23px
+      &-br
+        display: block
   .activities
+    padding-top: 40px
     &__title
+      margin: 0 0 57px 0
       font-size: 18px
       line-height: 23px
   .card
     width: 100%
   .footer
+    padding-bottom: 30px
     &-wrapper
-      grid-template-columns: 1fr
+      grid-template-columns: 100%
     &__logo
       grid-row: 1
       grid-column: 1
@@ -321,5 +327,10 @@
       &-form
         grid-row: 7
         grid-column: 1
+    &__send
+      flex-direction: column-reverse
+      align-items: start
+    &__info
+      margin-bottom: 15px
 
   
