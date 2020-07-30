@@ -1562,7 +1562,6 @@ template {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  border: 1px solid red;
 }
 
 .footer-bottom__link {
