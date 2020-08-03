@@ -29,7 +29,7 @@ try {
 
     // Настройки вашей почты
     $mail->Host       = 'smtp.yandex.ru'; // SMTP сервера вашей почты
-    $mail->Username   = 'lyudwig.karetov@yandex.ru'; // Логин на почте
+    $mail->Username   = 'lyudwig.karetov'; // Логин на почте
     $mail->Password   = 'GJG14V18Y'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;

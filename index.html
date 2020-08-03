@@ -551,7 +551,7 @@
             <form action="send.php" method="POST" class="footer__form">
               <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name">
               <input type="text" class="input footer__input" placeholder="Phone Number*" name="phone">
-              <textarea class="footer__massage" placeholder="Message" name="message"></textarea>
+              <textarea class="message footer__message" placeholder="Message" name="message"></textarea>
               <div class="send footer__send">
                 <button class="button footer__button" type="submit">Send</button>
                 <span class="footer__info">* Required Fields</span>
@@ -579,6 +579,26 @@
       <!-- /.container -->
     </footer>
     <!-- /.footer-bottom -->
+    <div class="modal">
+      <div class="modal__overlay"></div>
+      <!-- /.modal__overlay -->
+      <div class="modal__dialog">
+        <a href="#" class="modal__close"><img src="img/close.svg" alt="Icon: close"></a>
+        <h3 class="model__title modal__title--mb-3">Send us a message</h3>
+        <form action="send.php" method="POST" class="modal__form">
+          <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name">
+          <input type="text" class="input modal__input" placeholder="Phone Number*" name="phone">
+          <input type="text" class="input modal__input" placeholder="Email*" name="email">
+          <textarea class="message modal__message" placeholder="Message" name="message"></textarea>
+          <div class="send modal__send">
+            <button class="button modal__button" type="submit">Send</button>
+            <span class="modal__info">* Required Fields</span>
+          </div>
+        </form>
+      </div>
+      <!-- /.modal__dialog -->
+    </div>
+    <!-- /.modal -->
     <script src="js/swiper-bundle.min.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?apikey=1ae29c23-8edc-49de-bb08-41acf9f0bad2&lang=ru_RU" type="text/javascript"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
