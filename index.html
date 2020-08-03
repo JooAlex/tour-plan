@@ -165,7 +165,7 @@
                 </a>
               </div>
               <!-- /.booking__call-center -->
-              <button class="button booking__button">View Other Options</button>
+              <button data-toggle="modal" class="button booking__button">View Other Options</button>
             </div>
             <!-- /.booking -->
             <div id="map" class="map"></div>
@@ -584,7 +584,7 @@
       <!-- /.modal__overlay -->
       <div class="modal__dialog">
         <a href="#" class="modal__close"><img src="img/close.svg" alt="Icon: close"></a>
-        <h3 class="model__title modal__title--mb-3">Send us a message</h3>
+        <h3 class="modal__title modal__title--mb-3">Send us a message</h3>
         <form action="send.php" method="POST" class="modal__form">
           <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name">
           <input type="text" class="input modal__input" placeholder="Phone Number*" name="phone">
@@ -599,6 +599,7 @@
       <!-- /.modal__dialog -->
     </div>
     <!-- /.modal -->
+    <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?apikey=1ae29c23-8edc-49de-bb08-41acf9f0bad2&lang=ru_RU" type="text/javascript"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
