@@ -242,6 +242,10 @@
     &__send
       flex-direction: column-reverse
       align-items: start
+    &__info
+      margin-bottom: 15px
+    &__dialog
+      padding: 33px 55px
 @media (max-width: 576px)
   .logo
     width: 99px
@@ -336,6 +340,24 @@
       align-items: start
     &__info
       margin-bottom: 15px
-  
+  .modal
+    &__dialog
+      padding: 33px 44px
+@media (max-width: 485px)
+  .footer
+    &-bottom
+      &__wrapper
+        flex-direction: column
+        align-items: start
+      &__documents
+        margin-bottom: 10px
+@media (max-height: 485px)
+  .modal
+    &__dialog
+      height: 100vh
+      overflow-y: auto
+      padding: 33px 33px
+    &__title
+    
 
   
