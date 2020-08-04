@@ -6,22 +6,23 @@
     <title>Best Tour Plan - Hotel Booking</title>
     <link href="https://fonts.googleapis.com/css2?family=Muli:wght@400;700&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="navbar navbar__mobile--fixed">
       <div class="container">
         <div class="navbar-top">
-          <a href="#" class="logo">
+          <a href="#" class="logo" data-aos="fade-right" data-aos-delay="100">
             <img src="img/horizontal-logo.svg" alt="Logo: Best Tour Plan" class="logo__image">
           </a>
-          <form action="#" class="search navbar__search navbar__search--mobile--hidden">
+          <form action="#" class="search navbar__search navbar__search--mobile--hidden" data-aos="fade-right" data-aos-delay="200">
             <input type="text" class="search__input" placeholder="Search Location">
             <button class="search__button">
               <img src="img/search.svg" alt="Icon: search">
             </button>
           </form>
-          <a href="#" class="user navbar__user navbar__user--mobile--hidden">
+          <a href="#" class="user navbar__user navbar__user--mobile--hidden" data-aos="fade-right" data-aos-delay="300">
             <img src="img/user-avatar.jpg" alt="Avatar: Nathan" class="user__avatar">
             <span class="user__name">Nathan</span>
           </a>
@@ -181,7 +182,7 @@
       <div class="container">
         <h2 class="packages__title">Other Packages</h2>
         <div class="packages-wrapper">
-          <div class="packages__card packages__card-first">
+          <div class="packages__card packages__card-first" data-aos="zoom-in" data-aos-delay="100">
             <img src="img/packages-1.jpg" alt="Photo: package" class="packages__image packages__image-first">
             <span class="packages__label packages__label-first">Flash Offer</span>
             <div class="packages__info packages__info-first">
@@ -223,7 +224,7 @@
             <!-- /.packages__info -->
           </div>
           <!-- /.packages__card -->
-          <div class="packages__card packages__card-second">
+          <div class="packages__card packages__card-second" data-aos="zoom-in-up" data-aos-delay="300">
             <img src="img/packages-2.jpg" alt="Photo: package" class="packages__image packages__image-second">
             <span class="packages__label packages__label-second">Flash Offer</span>
             <div class="packages__info packages__info-second">
@@ -255,7 +256,7 @@
             <!-- /.packages__info -->
           </div>
           <!-- /.packages__card -->
-          <div class="packages__card packages__card-third">
+          <div class="packages__card packages__card-third" data-aos="zoom-in-right" data-aos-delay="100">
             <img src="img/packages-3.jpg" alt="Photo: package" class="packages__image packages__image-third">
             <span class="packages__label packages__label-third">Flash Offer</span>
             <div class="packages__info packages__info-third">
@@ -287,7 +288,7 @@
             <!-- /.packages__info -->
           </div>
           <!-- /.packages__card -->
-          <div class="packages__card packages__card-fourth">
+          <div class="packages__card packages__card-fourth" data-aos="zoom-in-down" data-aos-delay="500">
             <img src="img/packages-4.jpg" alt="Photo: package" class="packages__image packages__image-fourth">
             <span class="packages__label packages__label-fourth">Flash Offer</span>
             <div class="packages__info packages__info-fourth">
@@ -319,7 +320,7 @@
             <!-- /.packages__info -->
           </div>
           <!-- /.packages__card -->
-          <div class="packages__card packages__card-fifth">
+          <div class="packages__card packages__card-fifth" data-aos="zoom-in-left" data-aos-delay="300">
             <img src="img/packages-5.jpg" alt="Photo: package" class="packages__image packages__image-fifth">
             <span class="packages__label packages__label-fifth">Flash Offer</span>
             <div class="packages__info packages__info-fifth">
@@ -450,25 +451,25 @@
       <div class="container">
         <h2 class="activities__title">Other Activities</h2>
         <div class="activities-wrapper">
-          <div class="card activities__card">
+          <div class="card activities__card" data-aos="fade-up" data-aos-delay="100">
             <img src="img/activity-1.jpg" alt="The curious corner of chamarel" class="card__image">
             <h3 class="card__title">The curious corner of chamarel</h3>
             <button class="card__button">Book Now</button>
           </div>
           <!-- /.card -->
-          <div class="card activities__card">
+          <div class="card activities__card" data-aos="fade-up" data-aos-delay="300">
             <img src="img/activity-2.jpg" alt="Gymkhana club golf course" class="card__image">
             <h3 class="card__title">Gymkhana club golf course</h3>
             <button class="card__button">Book Now</button>
           </div>
           <!-- /.card -->
-          <div class="card activities__card">
+          <div class="card activities__card" data-aos="fade-up" data-aos-delay="500">
             <img src="img/activity-3.jpg" alt="Tamarind falls hiking trip - full day" class="card__image">
             <h3 class="card__title">Tamarind falls hiking trip - full day</h3>
             <button class="card__button">Book Now</button>
           </div>
           <!-- /.card -->
-          <div class="card activities__card">
+          <div class="card activities__card" data-aos="fade-up" data-aos-delay="700">
             <img src="img/activity-4.jpg" alt="The blue marine discovery quest" class="card__image">
             <h3 class="card__title">The blue marine discovery quest</h3>
             <button class="card__button">Book Now</button>
@@ -612,6 +613,7 @@
     <script src="js/parallax.min.js"></script>
     </script>
     <script src="js/jquery.validate.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
