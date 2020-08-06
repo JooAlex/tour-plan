@@ -86,7 +86,7 @@ $(document).ready(function () {
         },
         email: {
           required: "We need your email address to contact you",
-          email: "Your email address must be in the format of name@domain.com",
+          email: "Your email address is in the wrong format",
         },
         phone: {
           required: "Phone is required",
@@ -96,4 +96,6 @@ $(document).ready(function () {
   });
   
   AOS.init();
+
+  $('.phone').mask('+7 (000) 000-0000');
 });
