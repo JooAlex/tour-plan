@@ -182,7 +182,7 @@
       <div class="container">
         <h2 class="packages__title">Other Packages</h2>
         <div class="packages-wrapper">
-          <div class="packages__card packages__card-first" data-aos="zoom-in" data-aos-delay="100">
+          <div class="packages__card packages__card-first">
             <img src="img/packages-1.jpg" alt="Photo: package" class="packages__image packages__image-first">
             <span class="packages__label packages__label-first">Flash Offer</span>
             <div class="packages__info packages__info-first">
@@ -224,7 +224,7 @@
             <!-- /.packages__info -->
           </div>
           <!-- /.packages__card -->
-          <div class="packages__card packages__card-second" data-aos="zoom-in-up" data-aos-delay="300">
+          <div class="packages__card packages__card-second">
             <img src="img/packages-2.jpg" alt="Photo: package" class="packages__image packages__image-second">
             <span class="packages__label packages__label-second">Flash Offer</span>
             <div class="packages__info packages__info-second">
@@ -256,7 +256,7 @@
             <!-- /.packages__info -->
           </div>
           <!-- /.packages__card -->
-          <div class="packages__card packages__card-third" data-aos="zoom-in-right" data-aos-delay="100">
+          <div class="packages__card packages__card-third">
             <img src="img/packages-3.jpg" alt="Photo: package" class="packages__image packages__image-third">
             <span class="packages__label packages__label-third">Flash Offer</span>
             <div class="packages__info packages__info-third">
@@ -288,7 +288,7 @@
             <!-- /.packages__info -->
           </div>
           <!-- /.packages__card -->
-          <div class="packages__card packages__card-fourth" data-aos="zoom-in-down" data-aos-delay="500">
+          <div class="packages__card packages__card-fourth">
             <img src="img/packages-4.jpg" alt="Photo: package" class="packages__image packages__image-fourth">
             <span class="packages__label packages__label-fourth">Flash Offer</span>
             <div class="packages__info packages__info-fourth">
@@ -320,7 +320,7 @@
             <!-- /.packages__info -->
           </div>
           <!-- /.packages__card -->
-          <div class="packages__card packages__card-fifth" data-aos="zoom-in-left" data-aos-delay="300">
+          <div class="packages__card packages__card-fifth">
             <img src="img/packages-5.jpg" alt="Photo: package" class="packages__image packages__image-fifth">
             <span class="packages__label packages__label-fifth">Flash Offer</span>
             <div class="packages__info packages__info-fifth">
@@ -593,9 +593,15 @@
         <a href="#" class="modal__close"><img src="img/close.svg" alt="Icon: close"></a>
         <h3 class="modal__title modal__title--mb-3">Booking</h3>
         <form action="send.php" method="POST" class="modal__form form">
-          <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required minlength="2">
-          <input type="tel" class="input modal__input" placeholder="Phone Number*" name="phone" required>
-          <input type="email" class="input modal__input" placeholder="Your Email*" name="email" required>
+          <div class="modal__input-group">
+            <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required minlength="2">
+          </div>
+          <div class="modal__input-group">
+            <input type="tel" class="input modal__input" placeholder="Phone Number*" name="phone" required>
+          </div>
+          <div class="modal__input-group">
+            <input type="email" class="input modal__input" placeholder="Your Email*" name="email" required>
+          </div>
           <textarea class="message modal__message" placeholder="Message" name="message"></textarea>
           <div class="send modal__send">
             <button class="button modal__button" type="submit">Send</button>
