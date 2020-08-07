@@ -97,5 +97,5 @@ $(document).ready(function () {
   
   AOS.init();
 
-  $('.phone').mask('+7 (000) 000-0000');
+  $('.phone').mask('+7 (000) 000-00-00');
 });
