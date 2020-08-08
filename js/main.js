@@ -32,7 +32,10 @@ $(document).ready(function () {
     },
   });
 
-  
+  $(".map-loader").one('mouseover', () => {
+    $(".map").append('<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.041326362805!2d98.2925420506481!3d7.8907454942874455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30503b7bfcd9f903%3A0xf7065fac1e3d7c48!2sDoubleTree%20by%20Hilton%20Phuket%20Banthai%20Resort!5e0!3m2!1sru!2sru!4v1596824232277!5m2!1sru!2sru" width="100%" height:"100%" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>');
+    $(".map-loader").css("display", "none")
+  });
   
   $('.newsletter').parallax({imageSrc: 'img/newsletter-bg.jpg'});
   
