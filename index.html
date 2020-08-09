@@ -15,7 +15,7 @@
     <header class="navbar navbar__mobile--fixed">
       <div class="container">
         <div class="navbar-top">
-          <a href="#" class="logo" data-aos="fade-right" data-aos-delay="100">
+          <a href="http://joogodes.ru/best-tour/" class="logo" data-aos="fade-right" data-aos-delay="100">
             <img src="img/horizontal-logo.svg" alt="Logo: Best Tour Plan" class="logo__image">
           </a>
           <form action="#" class="search navbar__search navbar__search--mobile--hidden" data-aos="fade-right" data-aos-delay="200">
@@ -42,7 +42,7 @@
         <div class="container">
           <ul class="navbar-menu">
             <li class="navbar-menu__item navbar-menu__item--mobile--visible">
-              <a href="#" class="user navbar__user navbar__user--mobile--visible">
+              <a href="http://joogodes.ru/best-tour/" class="user navbar__user navbar__user--mobile--visible">
                 <img src="img/user-avatar.jpg" alt="Avatar: Nathan" class="user__avatar">
                 <span class="user__name user__name--light">Nathan</span>
               </a>
@@ -221,7 +221,7 @@
               <div class="packages__info-price">
                 <span class="packages__old-price">$ 10,500</span>
                 <span class="packages__new-price">$ 8,500</span>
-                <button class="packages__button">Book Now</button>
+                <button data-toggle="modal" class="packages__button">Book Now</button>
               </div>
               <!-- /.packages__info-price -->
             </div>
@@ -253,7 +253,7 @@
               <div class="packages__info-price">
                 <span class="packages__old-price">$ 10,500</span>
                 <span class="packages__new-price">$ 8,500</span>
-                <button class="packages__button">Book Now</button>
+                <button data-toggle="modal" class="packages__button">Book Now</button>
               </div>
               <!-- /.packages__info-price -->
             </div>
@@ -285,7 +285,7 @@
               <div class="packages__info-price">
                 <span class="packages__old-price">$ 10,500</span>
                 <span class="packages__new-price">$ 8,500</span>
-                <button class="packages__button">Book Now</button>
+                <button data-toggle="modal" class="packages__button">Book Now</button>
               </div>
               <!-- /.packages__info-price -->
             </div>
@@ -317,7 +317,7 @@
               <div class="packages__info-price">
                 <span class="packages__old-price">$ 10,500</span>
                 <span class="packages__new-price">$ 8,500</span>
-                <button class="packages__button">Book Now</button>
+                <button data-toggle="modal" class="packages__button">Book Now</button>
               </div>
               <!-- /.packages__info-price -->
             </div>
@@ -349,7 +349,7 @@
               <div class="packages__info-price">
                 <span class="packages__old-price">$ 10,500</span>
                 <span class="packages__new-price">$ 8,500</span>
-                <button class="packages__button">Book Now</button>
+                <button data-toggle="modal" class="packages__button">Book Now</button>
               </div>
               <!-- /.packages__info-price -->
             </div>
@@ -488,7 +488,9 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-wrapper">
-          <img src="img/vartical-logo.svg" alt="Logo: Best Tour Plan" class="logo footer__logo">
+          <a href="http://joogodes.ru/best-tour/" class="logo footer__logo">
+            <img src="img/vartical-logo.svg" alt="Logo: Best Tour Plan" class="logo footer__logo">
+          </a>
           <div class="footer__list footer__categories">
             <h3 class="footer__title">All Categories</h3>
             <ul class="footer__ul">
@@ -544,12 +546,12 @@
               <li class="footer__item footer__item--mb-2">
                 <div class="footer__icon-wrapper"><img class="footer__icon" src="img/map-marker.svg" alt="Icon: map"></div> 9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United States</li>
               <li class="footer__item footer__item--mb-2">
-                <div class="footer__icon-wrapper"><img class="footer__icon" src="img/contact-phone-call.svg" alt="Icon: phone-call"></div> Tel (business hours) : 269 1500 <br>
-                Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00 pm) <br>
-                Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)
+                <div class="footer__icon-wrapper"><img class="footer__icon" src="img/contact-phone-call.svg" alt="Icon: phone-call"></div> Tel (business hours) : <a class="footer__phone" href="tel: 269 1500">269 1500</a> <br>
+                Tel (hotline) Monday - Saturday: <a class="footer__phone" href="tel: 52-56-61-38">52-56-61-38</a> (08:00 am – 20:00 pm) <br>
+                Tel (hotline) Sunday: <a class="footer__phone" href="tel: 52-56-61-38">52-56-61-38</a> (08:00 am – 14:00 pm)
                 </li>
               <li class="footer__item footer__item--mb-2">
-                <div class="footer__icon-wrapper"><img class="footer__icon" src="img/email.svg" alt="Icon: email"></div> cherly.lawson@example.com</li>
+                <div class="footer__icon-wrapper"><img class="footer__icon" src="img/email.svg" alt="Icon: email"></div><a class="footer__email" href="mailto: cherly.lawson@example.com">cherly.lawson@example.com</a></li>
             </ul>
           </div>
           <!-- /.footer__contact-details -->
@@ -560,7 +562,7 @@
                 <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" required minlength="2">
               </div>
               <div class="footer__input-group">
-                <input type="tel" class="input footer__input phone" placeholder="Phone Number*" name="phone" required>
+                <input type="tel" class="input footer__input phone" placeholder="Phone Number*" name="phone" required minlength="18">
               </div>
               <textarea class="message footer__message" placeholder="Message" name="message"></textarea>
               <div class="send footer__send">
@@ -603,7 +605,7 @@
             <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required minlength="2">
           </div>
           <div class="modal__input-group">
-            <input type="tel" class="input modal__input phone" placeholder="Phone Number*" name="phone" required>
+            <input type="tel" class="input modal__input phone" placeholder="Phone Number*" name="phone" required minlength="18">
           </div>
           <div class="modal__input-group">
             <input type="email" class="input modal__input" placeholder="Your Email*" name="email" required>

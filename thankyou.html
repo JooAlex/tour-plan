@@ -4,24 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Best Tour Plan - Hotel Booking</title>
-    <link href="https://fonts.googleapis.com/css2?family=Muli:wght@400;700&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Muli:wght@400;700&family=Nunito:wght@400;700;800&display=swap" rel="preload">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="navbar navbar__mobile--fixed">
       <div class="container">
         <div class="navbar-top">
-          <a href="#" class="logo">
+          <a href="http://joogodes.ru/best-tour/" class="logo" data-aos="fade-right" data-aos-delay="100">
             <img src="img/horizontal-logo.svg" alt="Logo: Best Tour Plan" class="logo__image">
           </a>
-          <form action="#" class="search navbar__search navbar__search--mobile--hidden">
+          <form action="#" class="search navbar__search navbar__search--mobile--hidden" data-aos="fade-right" data-aos-delay="200">
             <input type="text" class="search__input" placeholder="Search Location">
             <button class="search__button">
               <img src="img/search.svg" alt="Icon: search">
             </button>
           </form>
-          <a href="#" class="user navbar__user navbar__user--mobile--hidden">
+          <a href="#" class="user navbar__user navbar__user--mobile--hidden" data-aos="fade-right" data-aos-delay="300">
             <img src="img/user-avatar.jpg" alt="Avatar: Nathan" class="user__avatar">
             <span class="user__name">Nathan</span>
           </a>
@@ -88,21 +91,23 @@
         <div class="hotel-info">
           <div class="hotel-info__text">
             <div class="hotel-wrapper">
-              <h1 class="hotel-name hotel-info__name">Сообщение отправлено!</h1>
+              <h1 class="hotel-name hotel-info__name">Message sent successfully!</h1>
             </div>
-            <p class="hotel-description hotel-info__description">Наш менеджер свяжется с вами через 15 минут</p>
+            <p class="hotel-description hotel-info__description">Our manager will contact you.</p>
           </div>
+          <a class="button hotel__button-return" href="http://joogodes.ru/best-tour/">return</a>
           <!-- /.hotel-info__text -->
         </div>
         <!-- /.hotel-info -->
       </div>
       <!-- /.container -->
     </section>
-
     <footer class="footer">
       <div class="container">
         <div class="footer-wrapper">
-          <img src="img/vartical-logo.svg" alt="Logo: Best Tour Plan" class="logo footer__logo">
+          <a href="http://joogodes.ru/best-tour/" class="logo footer__logo">
+            <img src="img/vartical-logo.svg" alt="Logo: Best Tour Plan" class="logo footer__logo">
+          </a>
           <div class="footer__list footer__categories">
             <h3 class="footer__title">All Categories</h3>
             <ul class="footer__ul">
@@ -130,7 +135,9 @@
           </div>
           <!-- /.footer__list -->
           <div class="footer__social-network">
-            <h3 class="footer__title footer__title--inline">Social Network</h3>
+            <div>
+              <h3 class="footer__title footer__title--inline">Social Network</h3>
+            </div>
             <div class="footer__social-links">
               <a href="#" class="footer__link"><img src="img/facebook.svg" alt="Icon: facebook"></a>
               <a href="#" class="footer__link"><img src="img/youtube.svg" alt="Icon: youtube"></a>
@@ -156,21 +163,25 @@
               <li class="footer__item footer__item--mb-2">
                 <div class="footer__icon-wrapper"><img class="footer__icon" src="img/map-marker.svg" alt="Icon: map"></div> 9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United States</li>
               <li class="footer__item footer__item--mb-2">
-                <div class="footer__icon-wrapper"><img class="footer__icon" src="img/contact-phone-call.svg" alt="Icon: phone-call"></div> Tel (business hours) : 269 1500 <br>
-                Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00 pm) <br>
-                Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)
+                <div class="footer__icon-wrapper"><img class="footer__icon" src="img/contact-phone-call.svg" alt="Icon: phone-call"></div> Tel (business hours) : <a class="footer__phone" href="tel: 269 1500">269 1500</a> <br>
+                Tel (hotline) Monday - Saturday: <a class="footer__phone" href="tel: 52-56-61-38">52-56-61-38</a> (08:00 am – 20:00 pm) <br>
+                Tel (hotline) Sunday: <a class="footer__phone" href="tel: 52-56-61-38">52-56-61-38</a> (08:00 am – 14:00 pm)
                 </li>
               <li class="footer__item footer__item--mb-2">
-                <div class="footer__icon-wrapper"><img class="footer__icon" src="img/email.svg" alt="Icon: email"></div> cherly.lawson@example.com</li>
+                <div class="footer__icon-wrapper"><img class="footer__icon" src="img/email.svg" alt="Icon: email"></div><a class="footer__email" href="mailto: cherly.lawson@example.com">cherly.lawson@example.com</a></li>
             </ul>
           </div>
           <!-- /.footer__contact-details -->
           <div class="footer__contact-form">
-            <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
-            <form action="send.php" method="POST" class="footer__form">
-              <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name">
-              <input type="text" class="input footer__input" placeholder="Phone Number*" name="phone">
-              <textarea class="footer__massage" placeholder="Message" name="message"></textarea>
+            <h3 class="footer__title footer__title--mb-4">Send us a message</h3>
+            <form action="send.php" method="POST" class="footer__form form">
+              <div class="footer__input-group">
+                <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" required minlength="2">
+              </div>
+              <div class="footer__input-group">
+                <input type="tel" class="input footer__input phone" placeholder="Phone Number*" name="phone" required minlength="18">
+              </div>
+              <textarea class="message footer__message" placeholder="Message" name="message"></textarea>
               <div class="send footer__send">
                 <button class="button footer__button" type="submit">Send</button>
                 <span class="footer__info">* Required Fields</span>
@@ -191,18 +202,22 @@
             <a href="#" class="footer-bottom__link">Conditions of use</a>
             <a href="#" class="footer-bottom__link">Cancellation policy</a>
           </div>
-          <img src="img/footer-bottom.png" alt="Image: footer icon" class="footer-bottom__img">
+          <div class="footer-bottom__img">
+            <img src="img/footer-bottom.png" alt="Image: footer icon">
+          </div>
         </div>
         <!-- /.footer-bottom__wrapper -->
       </div>
       <!-- /.container -->
     </footer>
     <!-- /.footer-bottom -->
+    <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=1ae29c23-8edc-49de-bb08-41acf9f0bad2&lang=ru_RU" type="text/javascript"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/parallax.min.js"></script>
-    </script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
